@@ -1,0 +1,3 @@
+module FIRSTFUNCTION
+
+go 1.21.2
