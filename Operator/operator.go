@@ -15,8 +15,14 @@ import "fmt"
 func main() {
 
 	// arithmetic()
-	calculation()
+	// calculation()
 
+	// assign()
+	// unaryOperators()
+
+	// logicalOperators()
+
+	bitwiseOp()
 }
 
 func arithmetic() {
@@ -58,5 +64,77 @@ func calculation() {
 	area2 := base * height / 2
 
 	fmt.Printf("Area of traingle = %.2f ", area2)
+
+}
+
+func assign() {
+
+	// Assign operations -> =, +=, -=, *=, /=, %=
+
+	x := 4
+	y := 2
+
+	x = x + 2
+
+	x += 5 // x = x + 5
+
+	x *= y
+
+	x /= y
+	fmt.Printf("x = %v \n", x)
+
+	x %= y
+
+	fmt.Printf("x = %v", x)
+
+}
+
+func unaryOperators() {
+
+	x := "12"
+
+	y := "14"
+
+	fmt.Printf("x = %v", x == y)
+
+	// for x := 100; x > 10; x-- {
+	// 	fmt.Printf("x = %v \n", x)
+	// }
+
+}
+
+func logicalOperators() {
+
+	// --> &&, ||, !
+
+	x := 4
+
+	y := 2
+
+	z := !(x == y)
+
+	fmt.Printf("z = %v \n", z)
+
+}
+
+func bitwiseOp() {
+
+	// ---> & , | , ^ , << , >>
+
+	x := 18
+
+	y := 17
+
+	z := x & y
+
+	a := x | y
+
+	b := x ^ y
+
+	fmt.Printf(" z = %v \n", z)
+
+	fmt.Printf(" a = %v \n", a)
+
+	fmt.Printf(" b = %v \n", b)
 
 }
